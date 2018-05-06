@@ -10,29 +10,57 @@
 	<!-- Задание 4.2 -->
 </head>
 <body>
-	<div class="line line_color_purple"></div>
 	<div class="content">
-			<header class="header content__header">
-				<a href="#" class="logo">
-					<div class="logo__square"></div>
-					<h1 class="logo__title">Super Logo</h1>
-				</a>
+		<div class="line line_color_purple"></div>
+		<header class="header content__header">
+			<a href="#" class="logo">
+				<div class="logo__square"></div>
+				<h1 class="logo__title">Super Logo</h1>
+			</a>
+			<form action="#" class="search">
+					<input type="text" class="search__text">
+					<input type="submit" class="search__submit" value ="GO">
+			</form>
+			<div class="nav-container" id="nav-container">
 				<form action="#" class="search">
-						<input type="text" class="search__text">
-						<input type="submit" class="search__submit" value ="GO">
+					<input type="text" class="search__text">
+					<input type="submit" class="search__submit" value ="GO">
 				</form>
-			</header>
-			<nav class="nav content_nav">
-				<a href="#" class="nav__link nav__link_active">HOME</a>
-				<a href="#" class="nav__link">ABOUT AS</a>
-				<a href="#" class="nav__link">SERVICE</a>
-				<a href="#" class="nav__link">PARTNERS</a>
-				<a href="#" class="nav__link">CUSTOMERS</a>
-				<a href="#" class="nav__link">PROJECT</a>
-				<a href="#" class="nav__link">CAREERS</a>
-				<a href="#" class="nav__link">CONTACT</a>
-			</nav>
-			<main class="main">
+				<nav id="nav" class="nav">
+					<a href="#" class="nav__link nav__link_active">HOME</a>
+					<a href="#" class="nav__link">ABOUT AS</a>
+					<a href="#" class="nav__link">SERVICE</a>
+					<a href="#" class="nav__link">PARTNERS</a>
+					<a href="#" class="nav__link">CUSTOMERS</a>
+					<a href="#" class="nav__link">PROJECT</a>
+					<a href="#" class="nav__link">CAREERS</a>
+					<a href="#" class="nav__link">CONTACT</a>
+					<a href="#button-menu" class="button-menu">
+						<div class="button-menu__second"></div>
+						<div class="button-menu__first"></div>
+						<div class="button-menu__third"></div>
+					</a>
+				</nav>
+			</div>
+			<a href="#button-menu" class="hidden-link"></a>
+			<a href="#nav-container" class="button-menu" id="button-menu">
+				<div class="button-menu__second"></div>
+				<div class="button-menu__first"></div>
+				<div class="button-menu__third"></div>
+			</a>
+		</header>
+		<nav class="nav content_nav">
+			<a href="#" class="nav__link nav__link_active">HOME</a>
+			<a href="#" class="nav__link">ABOUT AS</a>
+			<a href="#" class="nav__link">SERVICE</a>
+			<a href="#" class="nav__link">PARTNERS</a>
+			<a href="#" class="nav__link">CUSTOMERS</a>
+			<a href="#" class="nav__link">PROJECT</a>
+			<a href="#" class="nav__link">CAREERS</a>
+			<a href="#" class="nav__link">CONTACT</a>
+		</nav>
+		<main class="main">
+			<div class="bg-img-board">
 				<div class="img-board main__img-board">
 					<h1 class="img-board__h1">
 						Aliquam pharetra <br> vulputate
@@ -42,139 +70,140 @@
 					</p>
 					<a href="#" class="img-board__a">READ MORE</a>
 				</div>
-				<article class="topicks">
-					<div class="row topicks__row">
-						<section class="post">
-							<div class="row post__row">
-								<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">ABOUT SUPER LOGO</span></h1>
+			</div>
+			<article class="topicks">
+				<div class="row topicks__row">
+					<section class="post">
+						<div class="row post__row">
+							<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">ABOUT SUPER LOGO</span></h1>
+						</div>
+						<div class="row post__row">
+							<a href="#home" class="post__link"><img src="img/dog.png" class="post__img"></a>
+							<div class="column post__column">
+								<p class="post__p">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
+								</p>
+								<a href="#read-more" class="post__read-more">Read more</a>
 							</div>
-							<div class="row post__row">
-								<a href="#home" class="post__link"><img src="img/dog.png" class="post__img"></a>
-								<div class="column post__column">
-									<p class="post__p">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-									</p>
-									<a href="#read-more" class="post__read-more">Read more</a>
+						</div>
+					</section>
+					<section class="post">
+						<div class="row post__row">
+							<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">SOME WORDS OUR CEO</span></h1>
+						</div>
+						<div class="row post__row">
+							<a href="#home" class="post__link"><img src="img/stive.png" class="post__img"></a>
+							<div class="column post__column">
+								<p class="post__p">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
+								</p>
+								<p class="post__author">Steve Jobs, CEO</p>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="row topicks__row">
+					<section class="post">
+						<div class="row post__row">
+							<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">ABOUT SUPER LOGO</span></h1>
+						</div>
+						<div class="row post__row">
+							<a href="#home" class="post__link"><img src="img/eyes.png" class="post__img"></a>
+							<div class="column post__column">
+								<p class="post__p">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
+								</p>
+								<a href="#read-more" class="post__read-more">Read more</a>
+							</div>
+						</div>
+					</section>
+					<section class="post">
+						<div class="row post__row">
+							<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">SOME WORDS OUR CEO</span></h1>
+						</div>
+						<div class="row post__row">
+							<a href="#home" class="post__link"><img src="img/girl.png" class="post__img"></a>
+							<div class="column post__column">
+								<p class="post__p">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
+								</p>
+								<p class="post__author">Steve Jobs, CEO</p>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="row topicks__row row2">
+					<section class="post">
+						<div class="row post__row">
+							<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">SERVICES</span></h1>
+						</div>
+						<div class="row post__row">
+							<div class="column">
+								<p class="post__p">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
+								</p>
+								<a href="#read-more" class="post__read-more">Read more</a>
+							</div>
+						</div>
+					</section>
+					<section class="post">
+						<div class="row post__row">
+							<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">RESENT POST</span></h1>
+						</div>
+						<div class="column post__resent-post">
+							<div class="post__posts">
+								<a href="#" class="post__small-link"><img src="img/1.png"></a>
+								<div class="post__column-info">
+									<h4 class="post__title">Lorem ipsum</h4>
+									<p class="post__info">Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
 								</div>
 							</div>
-						</section>
-						<section class="post">
-							<div class="row post__row">
-								<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">SOME WORDS OUR CEO</span></h1>
-							</div>
-							<div class="row post__row">
-								<a href="#home" class="post__link"><img src="img/stive.png" class="post__img"></a>
-								<div class="column post__column">
-									<p class="post__p">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-									</p>
-									<p class="post__author">Steve Jobs, CEO</p>
+							<div class="post__posts">
+								<a href="#" class="post__small-link"><img src="img/2.png"></a>
+								<div class="post__column-info">
+									<h4 class="post__title">Lorem ipsum</h4>
+									<p class="post__info">Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
 								</div>
 							</div>
-						</section>
-					</div>
-					<div class="row topicks__row">
-						<section class="post">
-							<div class="row post__row">
-								<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">ABOUT SUPER LOGO</span></h1>
-							</div>
-							<div class="row post__row">
-								<a href="#home" class="post__link"><img src="img/eyes.png" class="post__img"></a>
-								<div class="column post__column">
-									<p class="post__p">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-									</p>
-									<a href="#read-more" class="post__read-more">Read more</a>
+							<div class="post__posts">
+								<a href="#" class="post__small-link"><img src="img/3.png"></a>
+								<div class="post__column-info">
+									<h4 class="post__title">Lorem ipsum</h4>
+									<p class="post__info">Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
 								</div>
 							</div>
-						</section>
-						<section class="post">
-							<div class="row post__row">
-								<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">SOME WORDS OUR CEO</span></h1>
+						</div>
+					</section>
+					<section class="post">
+						<div class="row post__row">
+							<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">SERVICES</span></h1>
+						</div>
+						<div class="row post__row">
+							<div class="column">
+								<p class="post__p">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
+								</p>
+								<a href="#read-more" class="post__read-more">Read more</a>
 							</div>
-							<div class="row post__row">
-								<a href="#home" class="post__link"><img src="img/girl.png" class="post__img"></a>
-								<div class="column post__column">
-									<p class="post__p">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-									</p>
-									<p class="post__author">Steve Jobs, CEO</p>
-								</div>
-							</div>
-						</section>
-					</div>
-					<div class="row topicks__row row2">
-						<section class="post">
-							<div class="row post__row">
-								<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">SERVICES</span></h1>
-							</div>
-							<div class="row post__row">
-								<div class="column">
-									<p class="post__p">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-									</p>
-									<a href="#read-more" class="post__read-more">Read more</a>
-								</div>
-							</div>
-						</section>
-						<section class="post">
-							<div class="row post__row">
-								<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">RESENT POST</span></h1>
-							</div>
-							<div class="column post__resent-post">
-								<div class="post__posts">
-									<a href="#" class="post__small-link"><img src="img/1.png"></a>
-									<div class="post__column-info">
-										<h4 class="post__title">Lorem ipsum</h4>
-										<p class="post__info">Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
-									</div>
-								</div>
-								<div class="post__posts">
-									<a href="#" class="post__small-link"><img src="img/2.png"></a>
-									<div class="post__column-info">
-										<h4 class="post__title">Lorem ipsum</h4>
-										<p class="post__info">Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
-									</div>
-								</div>
-								<div class="post__posts">
-									<a href="#" class="post__small-link"><img src="img/3.png"></a>
-									<div class="post__column-info">
-										<h4 class="post__title">Lorem ipsum</h4>
-										<p class="post__info">Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor.</p>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section class="post">
-							<div class="row post__row">
-								<h1 class="post__h1 post__h1_color_orange"><span class="post__h1-head">SERVICES</span></h1>
-							</div>
-							<div class="row post__row">
-								<div class="column">
-									<p class="post__p">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam massa, dignissim at nisi nec, iaculis molestie leo. Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis sem a efficitur auctor. Sed vulputate vitae dui non fermentum. Donec non sem dignissim, tincidunt arcu eget, posuere tellus. Quisque consectetur diam id faucibus sagittis. Praesent placerat, diam non sollicitudin suscipit, eros erat
-									</p>
-									<a href="#read-more" class="post__read-more">Read more</a>
-								</div>
-							</div>
-						</section>
-					</div>
-					<div class="row topicks__row">
-						<section class="post">
-							<div class="row post__row">
-								<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">CLENTS</span></h1>
-							</div>
-							<div class="post__flex-row">
-								<a href="#" class="post__link-flex"><img class="post__img-flex" src="img/html5.png"></a>
-								<a href="#" class="post__link-flex"><img class="post__img-flex" src="img/css3.png"></a>
-								<a href="#" class="post__link-flex"><img class="post__img-flex" src="img/nodejs.png"></a>
-								<a href="#" class="post__link-flex"><img class="post__img-flex" src="img/php.png"></a>
-								<a href="#" class="post__link-flex"><img class="post__img-flex" src="img/mysql.png"></a>
-							</div>
-						</section>
-					</div>
-				</article>
-			</main>
+						</div>
+					</section>
+				</div>
+				<div class="row topicks__row">
+					<section class="post">
+						<div class="row post__row">
+							<h1 class="post__h1 post__h1_color_purple"><span class="post__h1-head">CLIENTS</span></h1>
+						</div>
+						<div class="post__flex-row">
+							<a href="#" class="post__link-flex"><img class="post__img-flex" src="img/html5.png"></a>
+							<a href="#" class="post__link-flex"><img class="post__img-flex" src="img/css3.png"></a>
+							<a href="#" class="post__link-flex"><img class="post__img-flex" src="img/nodejs.png"></a>
+							<a href="#" class="post__link-flex"><img class="post__img-flex" src="img/php.png"></a>
+							<a href="#" class="post__link-flex"><img class="post__img-flex" src="img/mysql.png"></a>
+						</div>
+					</section>
+				</div>
+			</article>
+		</main>
 	</div>
 	<footer class="footer">
 		<h3 class="footer__title">Copyright © Lodoss Team  2018</h3>
